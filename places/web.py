@@ -78,6 +78,11 @@ async def index_doc(request):
     except Exception as e:
         return await request.app.json_resp({"error": str(e)}, 400)
 
+@routes.get("/collections")
+async def get_collections(request):
+    collections = await request.app.client.get_collections()
+    return await request.app.json_resp(collections)
+
 
 @routes.get("/search")
 async def search(request):
