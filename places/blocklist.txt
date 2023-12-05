@@ -4,6 +4,8 @@ compute.amazonaws.com
 googleadservices.com
 dartsearch
 facebook.com
+kubernetes.io
+mozilla.org
 localhost
 127.0.0.1
 0.0.0.0
